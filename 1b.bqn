@@ -16,6 +16,7 @@ FirstLetterToNumber ← {
         # change mut in place so each word-digit is replaced
         mut ↩ (𝕩 ⊑ digits) Interleave ((𝕩 ⊑ matches) Split mut)
     }
+
     ProcessMatch⌜ (⌽↕≠digits)
     mut
 }
